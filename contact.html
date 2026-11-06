@@ -125,8 +125,7 @@
             <a href="/contact" class="py-3">お問い合わせ・体験申込</a>
         </nav>
         <div class="p-4 flex flex-col gap-3">
-            <!-- TODO: りんご塾専用LINE開設後に、公式LINEボタンを追加しURLを設定する（現在はお問い合わせページへ誘導） -->
-            <a href="/contact" class="bg-line text-white text-center font-bold py-3 rounded">公式LINEで相談する</a>
+            <a href="https://line.me/R/ti/p/@449qneyy" target="_blank" rel="noopener" class="bg-line text-white text-center font-bold py-3 rounded">公式LINEで相談する</a>
             <a href="tel:0667799507" class="bg-main text-white text-center font-bold py-3 rounded">電話 06-6779-9507</a>
         </div>
     </div>
@@ -158,9 +157,8 @@
             </div>
             <div class="card p-6 text-center">
                 <h3 class="font-black text-lg text-main-dark mb-2">公式LINE</h3>
-                <!-- TODO: りんご塾専用LINE開設後に、友だち追加URLとQRコードをここへ設定する -->
-                <p class="text-sm text-gray-600 mb-4">りんご塾専用の公式LINEは開設を進めています。ご相談・お申し込みは、お電話・メールで承っています。</p>
-                <a href="tel:0667799507" class="inline-block bg-main text-white font-bold px-6 py-3 rounded">電話で相談する</a>
+                <p class="text-sm text-gray-600 mb-4">体験のご相談は、りんご塾専用の公式LINEからも受け付けています。下のボタンから友だち追加してください。</p>
+                <a href="https://line.me/R/ti/p/@449qneyy" target="_blank" rel="noopener" class="inline-block bg-line text-white font-bold px-6 py-3 rounded">友だち追加する</a>
             </div>
         </div>
         <p class="text-sm text-gray-600">「算数が好きで、もっと伸ばしたい」「大会に挑戦させてみたい」。そんなご相談からで大丈夫です。初回の体験授業は無料です。</p>
@@ -254,8 +252,7 @@
                     <li><a href="https://www.ringojuku.com/kyoshitsu/dp/?id=r_tennouji" class="hover:underline" target="_blank" rel="noopener">本部サイトの天王寺校ページ</a></li>
                 </ul>
                 <div class="flex flex-col gap-3 mt-6">
-                    <!-- TODO: りんご塾専用LINE開設後にURL差し替え（現在はお問い合わせページへのリンク） -->
-                    <a href="/contact" class="bg-line text-white text-center font-bold py-3 rounded">公式LINE</a>
+                    <a href="https://line.me/R/ti/p/@449qneyy" target="_blank" rel="noopener" class="bg-line text-white text-center font-bold py-3 rounded">公式LINE</a>
                     <a href="tel:0667799507" class="bg-main text-white text-center font-bold py-3 rounded">電話 06-6779-9507</a>
                 </div>
             </div>
@@ -266,8 +263,7 @@
     <!-- モバイル固定CTA -->
     <div class="fixed bottom-0 left-0 right-0 z-50 grid grid-cols-2 lg:hidden shadow-[0_-4px_12px_rgba(0,0,0,0.12)]">
         <a href="tel:0667799507" class="bg-main text-white text-center font-bold py-3 text-sm">電話する<br><span class="text-xs">06-6779-9507</span></a>
-        <!-- TODO: りんご塾専用LINE開設後にURL差し替え（現在はお問い合わせページへのリンク） -->
-        <a href="/contact" class="bg-line text-white text-center font-bold py-3 text-sm">LINEで相談<br><span class="text-xs">公式LINE</span></a>
+        <a href="https://line.me/R/ti/p/@449qneyy" target="_blank" rel="noopener" class="bg-line text-white text-center font-bold py-3 text-sm">LINEで相談<br><span class="text-xs">公式LINE</span></a>
     </div>
     <div class="h-14 lg:hidden"></div>
 
@@ -287,7 +283,7 @@
             gtag('event', 'phone_call_click', { event_category: 'engagement', event_label: el.getAttribute('href').replace('tel:', ''), page_path: window.location.pathname });
           });
         });
-        /* TODO: りんご塾専用LINE開設後にリンク先URLを設定すると、下記の line_click 計測がそのまま効く */
+        /* 公式LINE（@449qneyy）のクリックを line_click として計測する */
         document.querySelectorAll('a[href*="lin.ee"], a[href*="line.me"]').forEach(function(el) {
           el.addEventListener('click', function() {
             gtag('event', 'line_click', { event_category: 'engagement', event_label: 'LINE', page_path: window.location.pathname });
